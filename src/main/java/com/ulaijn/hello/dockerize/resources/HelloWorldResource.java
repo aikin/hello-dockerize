@@ -1,4 +1,4 @@
-package com.ulaijn.HelloWorld.resources;
+package com.ulaijn.hello.dockerize.resources;
 
 
 import org.springframework.stereotype.Component;

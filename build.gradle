@@ -1,4 +1,4 @@
-group "com.ulaijn.HelloWorld"
+group "com.ulaijn.hello.dockerize"
 version "1.0.0"
 
 

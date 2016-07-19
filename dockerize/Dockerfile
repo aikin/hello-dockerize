@@ -39,5 +39,8 @@ RUN update-alternatives --install "/usr/bin/java" "java" "${JRE_HOME}/bin/java" 
 	update-alternatives --set java "${JRE_HOME}/bin/java" && \
 	update-alternatives --set javac "${JAVA_HOME}/bin/javac"
 
+WORKDIR /hello-dockerize
+
 EXPOSE 8080
+
 CMD ["bash"]

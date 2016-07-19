@@ -1,4 +1,4 @@
-package com.ulaijn.HelloWorld.config;
+package com.ulaijn.hello.dockerize.config;
 
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Configuration;
