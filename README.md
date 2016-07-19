@@ -1,4 +1,4 @@
 # dockerize 
 
-* run
+* run  
 > `docker-compose run --service-ports web`
