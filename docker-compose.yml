@@ -1,0 +1,10 @@
+web:
+  build: ./dockerize
+  environment:
+    - LANG=C.UTF-8
+    - TERM=xterm
+    - DEBUG=true
+  ports:
+    - "8080:8080"
+  volumes:
+    - .:/HelloWorld
