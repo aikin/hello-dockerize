@@ -7,10 +7,10 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
 @Component
-@Path("/helloworld")
-public class HelloWorldResource {
+@Path("/hello-dockerize")
+public class HelloDockerizeResource {
     @GET
-    public String helloWorld() {
-        return "Hello World!";
+    public String helloDockerize() {
+        return "Hello Dockerize!";
     }
 }
