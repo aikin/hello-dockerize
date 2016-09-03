@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
-        packages("com.ulaijn.HelloWorld.resources");
+        packages("com.ulaijn.hello.dockerize.resources");
     }
 }
