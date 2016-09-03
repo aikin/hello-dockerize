@@ -16,6 +16,7 @@ buildscript {
 apply plugin: "idea"
 apply plugin: "java"
 apply plugin: "spring-boot"
+apply plugin: "application"
 
 sourceCompatibility = 1.8
 
@@ -35,3 +36,10 @@ dependencies {
 
     testCompile "junit:junit:$junitVersion"
 }
+
+/*
+  remote debug setup
+ */
+applicationDefaultJvmArgs = [
+        "-Xdebug -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=n"
+]
