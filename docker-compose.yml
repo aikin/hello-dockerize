@@ -1,11 +1,13 @@
 web:
   build: ./dockerize
+  env_file: ./dockerize/dev.env
   environment:
     - LANG=C.UTF-8
     - TERM=xterm
     - DEBUG=true
   ports:
     - "8080:8080"
+    - "3306:3306"
     - "5005:5005"
   volumes:
     - .:/hello-dockerize
