@@ -1,0 +1,14 @@
+flyway {
+    driver = 'com.mysql.jdbc.Driver'
+    url = "jdbc:mysql://dockerhost:3306/hello_dockerize"
+    user = 'mysql'
+    password = 'mysql'
+    table = 'hello_dockerize_schema_version'
+    initOnMigrate = true
+    locations = ["filesystem:${projectDir}/src/main/resources/db/migration/mysql"]
+    sqlMigrationPrefix = 'MySQL-'
+}
+
+dependencies {
+    compile 'mysql:mysql-connector-java:5.1.34'
+}

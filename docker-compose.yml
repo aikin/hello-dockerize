@@ -11,3 +11,4 @@ web:
     - "5005:5005"
   volumes:
     - .:/hello-dockerize
+    - /var/lib/mysql:/var/lib/mysql
