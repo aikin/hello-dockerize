@@ -1,14 +1,22 @@
 web:
   build: ./dockerize
-  env_file: ./dockerize/dev.env
   environment:
     - LANG=C.UTF-8
     - TERM=xterm
     - DEBUG=true
+  links:
+      - mysql:mysql
   ports:
     - "8080:8080"
-    - "3306:3306"
     - "5005:5005"
   volumes:
     - .:/hello-dockerize
+
+mysql:
+  build: ./dockerize/mysql
+  env_file: ./dockerize/dev.env
+  ports:
+    - "3306:3306"
+  volumes:
     - /var/lib/mysql:/var/lib/mysql
+
